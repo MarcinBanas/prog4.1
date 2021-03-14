@@ -60,6 +60,8 @@ namespace prog4._1
             insertCommand3.Parameters.Add(new SqlParameter("ID", id3));
             
             insertCommand3.ExecuteNonQuery();
+
+            connection.Close();
         }
     }
 }
