@@ -8,12 +8,12 @@ namespace prog4._1
 {
     public class BazaDanych
     {
-        private string _ConnectionString;
+        public string ConnectionString;
         
         
         public BazaDanych(string connectionString)
         {
-            this._ConnectionString = connectionString;
+            this.ConnectionString = connectionString;
             
         }
     }
