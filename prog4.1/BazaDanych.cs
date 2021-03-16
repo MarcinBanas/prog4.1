@@ -2,16 +2,18 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace prog4._1
 {
-    class BazaDanych
+    public class BazaDanych
     {
-        public string ConnectionString { get; set; } // czy connection string to jedyna informacja jaką mogę wyciągnąć do klasy?
+        private string _ConnectionString;
+        
         
         public BazaDanych(string connectionString)
         {
-            this.ConnectionString = connectionString;
+            this._ConnectionString = connectionString;
             
         }
     }
